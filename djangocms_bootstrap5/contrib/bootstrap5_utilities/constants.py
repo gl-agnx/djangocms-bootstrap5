@@ -9,9 +9,9 @@ SPACER_PROPERTY_CHOICES = (
 SPACER_SIDE_CHOICES = (
     ('', '*'),
     ('t', '*-top'),
-    ('r', '*-right'),
+    ('e', '*-right'),
     ('b', '*-bottom'),
-    ('l', '*-left'),
+    ('s', '*-left'),
     ('x', '*-left & *-right'),
     ('y', '*-top & *-bottom'),
 )
