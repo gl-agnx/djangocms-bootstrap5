@@ -2,7 +2,7 @@ from functools import partial
 
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from django.utils.translation import ungettext
+from django.utils.translation import ngettext
 
 from cms.models import CMSPlugin
 
@@ -86,7 +86,7 @@ class Bootstrap5GridRow(CMSPlugin):
 
     def get_short_description(self):
         column_count = len(self.child_plugin_instances or [])
-        column_count_str = ungettext(
+        column_count_str = ngettext(
             '(1 column)',
             '(%(count)i columns)',
             column_count
